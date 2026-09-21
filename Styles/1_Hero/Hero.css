@@ -1,5 +1,5 @@
 .section-hero{
-    background-color: var(--azul-uade);
+    background-color: var(--color-principal);
 }
 
 .hero-contenedor{
@@ -7,26 +7,28 @@ display: flex;
 height: 100%;
 }
 
-/* Columna Izquierda */
-.Hero-ColumIzq{
-width: 50vw;
+.hero-columna{
+width: 50%;
+}
+
+.hero-contenido{
 display: flex;
 flex-direction: column;
 }
 
 .hero-text{
-    color: var(--texto-claro);
+    color: var(--color-texto-claro);
 }
 
 .hero-text small{
-    color: var(--cafe-leche);
+    color: var(--color-suave);
     font-size: 2rem;
 }
 
 
 
 .hero-text h1{
-    color: var(--dorado-uade);
+    color: var(--color-acento);
     font-size: 5rem;
     margin-top: 0;
 }
@@ -42,40 +44,7 @@ flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.btn{
-    border: 2px solid;
-    border-color: transparent;
-    padding: 1rem;
-    border-radius:5px;
-    font-weight: bold;
-    margin-right: 1rem;
-    width: 275px;
-}
-
-.btn-primary{
-    background-color: Var(--cafe-leche);
-    color: var(--cafe-tostado);
-}
-
-.btn-primary:hover{
-    background-color: Var(--cafe-tostado);
-    color: var(--cafe-leche);
-}
-
-.btn-secondary{
-    background-color: transparent;
-    color: var(--cafe-leche);
-    border-color: var(--cafe-leche);
-}
-
-.btn-secondary:hover{
-    background-color: Var(--cafe-tostado);
-    color: var(--cafe-leche);
-    border-color: var(Var(--cafe-tostado));
-}
-
-.Hero-ColumDer{
-width: 50vw;
+.hero-imagenes{
 position: relative;
 display: flex;
 justify-content: center;
@@ -87,7 +56,7 @@ display: flex;
 margin-top: 1.5rem;
 }
 
-.container-metrica{
+.metrica{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,36 +64,36 @@ margin-top: 1.5rem;
     margin-right: 4rem;
 }
 
-.container-metrica h2{
-   color: var(--rojo-colombia);
+.metrica h2{
+    color: var(--color-destacado);
    font-size: 3rem;
 }
 
-.container-metrica p{
-   color: var(--cafe-leche);
+.metrica p{
+    color: var(--color-suave);
    font-size: 1.5rem;
 }
 
 
 /* Columna Derecha */
-.Hero-img{
+.hero-img{
     object-fit: cover;
     border-radius: 8px;
 }
 
-.Hero-img-principal{
+.hero-img-principal{
     width: 78%;
     height: 70%;
     transform: translate(-5%, -5%);
 }
 
-.Hero-img-secundaria{
+.hero-img-secundaria{
     position: absolute;
     width: 42%;
     height: 38%;
     right: 2%;
     bottom: 8%;
-    border: 2px solid var(--texto-claro);
+    border: 2px solid var(--color-texto-claro);
     object-position: right center;
 }
 

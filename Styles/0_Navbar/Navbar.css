@@ -1,11 +1,11 @@
-.Navbar {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
   height: 10vh;
-  background-color: var(--azul-uade-oscuro);
+  background-color: var(--color-principal-oscuro);
 }
-.Navbar-Container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,22 +13,22 @@
   padding: 0 2rem;
 }
 
-.Navbar-Container-items {
+.navbar-lista {
   display: flex;
   gap: 2rem;
   align-items: center;
   height: 100%;
 }
 
-.Nav-item {
-  color: var(--texto-claro);
+.nav-item {
+  color: var(--color-texto-claro);
   font-size: 1.2rem;
 }
 
-.Nav-item:hover {
-  color: var(--dorado-uade);
+.nav-item:hover {
+  color: var(--color-acento);
 }
 
-.Logo-img {
+.logo-img {
   height: 3rem;
 }

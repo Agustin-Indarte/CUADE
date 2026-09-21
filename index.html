@@ -7,6 +7,12 @@
     <!-- Importacion de estilos -->
     <link rel="stylesheet" href="./Styles/0_Navbar/Navbar.css" />
     <link rel="stylesheet" href="./Styles/1_Hero/Hero.css" />
+    <link rel="stylesheet" href="./Styles/2_Menu/Menu.css" />
+    <link rel="stylesheet" href="./Styles/3_Banner/Banner.css" />
+    <link rel="stylesheet" href="./Styles/4_Galery/Galery.css" />
+    <link rel="stylesheet" href="./Styles/5_aboutMe/AboutMe.css" />
+    <link rel="stylesheet" href="./Styles/6_Contact/Contact.css" />
+    <link rel="stylesheet" href="./Styles/7_Footer/Footer.css" />
     <link rel="stylesheet" href="./style.css" />
 
     <title>Cuade - Cafe</title>
@@ -14,18 +20,18 @@
 
   <body>
     <!-- CABECERA CON NAVBAR - Agus -->
-    <header class="Navbar">
-      <div class="Navbar-Container">
+    <header class="navbar">
+      <div class="navbar-container">
         <a href="#inicio" class="logo"
-          ><img class="Logo-img" src="/public/img/Logo.png" alt="Logo"
+          ><img class="logo-img" src="/public/img/Logo.png" alt="Logo"
         /></a>
 
-        <nav class="Navbar-menu">
-          <ul class="Navbar-Container-items">
-            <li class="Nav-item"><a href="#Menu">Menu</a></li>
-            <li class="Nav-item"><a href="#Galeria">Galeria</a></li>
-            <li class="Nav-item"><a href="Nosotros">Nosotros</a></li>
-            <li class="Nav-item"><a href="Contacto">Contacto</a></li>
+        <nav class="navbar-menu">
+          <ul class="navbar-lista">
+            <li class="nav-item"><a href="#Menu">Menu</a></li>
+            <li class="nav-item"><a href="#Galeria">Galeria</a></li>
+            <li class="nav-item"><a href="Nosotros">Nosotros</a></li>
+            <li class="nav-item"><a href="Contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -36,14 +42,14 @@
       <!-- 1ra seccion - Hero (Presentacion) - Agus -->
       <section id="Inicio" class="section section-hero">
         <div class="hero-contenedor">
-
-          <div class="Hero-ColumIzq">
+          <div class="hero-columna hero-contenido">
             <article class="hero-text">
               <small>Entre clase y clase</small>
               <h1>CUADE | CAFETERÍA</h1>
               <p>
                 Para preparar un parcial, disfrutar el receso o compartir una
-                charla después de cursar: siempre hay un buen motivo para pasar por CUADE.
+                charla después de cursar: siempre hay un buen motivo para pasar
+                por CUADE.
               </p>
 
               <div class="hero-btn">
@@ -53,48 +59,162 @@
             </article>
 
             <article class="hero-metricas">
-              <div class="container-metrica">
-                <h2>
-                  100%
-                </h2>
+              <div class="metrica">
+                <h2>100%</h2>
                 <p>Café Colombiano</p>
               </div>
-              <div class="container-metrica">
-                <h2>
-                  100%
-                </h2>
-                <p>Café Colombiano</p>
+              <div class="metrica">
+                <h2>7 a 22hs</h2>
+                <p>Para disfrutar</p>
               </div>
-              <div class="container-metrica">
-                <h2>
-                  100%
-                </h2>
-                <p>Café Colombiano</p>
+              <div class="metrica">
+                <h2>15%</h2>
+                <p>De descuento</p>
               </div>
             </article>
           </div>
 
-          <div class="Hero-ColumDer">
+          <div class="hero-columna hero-imagenes">
             <img
-              class="Hero-img Hero-img-principal"
+              class="hero-img hero-img-principal"
               src="/public/img/Hero1.png"
               alt="Interior de la cafetería CUADE"
             />
             <img
-              class="Hero-img Hero-img-secundaria"
+              class="hero-img hero-img-secundaria"
               src="/public/img/Hero2.png"
               alt="Granos de cafe"
             />
           </div>
-
         </div>
       </section>
 
       <!-- 2a seccion - Menu (Servicios) - Agus -->
       <section id="Menu" class="section section-menu">
-        <div class="contenedor">
+        <div class="menu-contenedor">
           <!-- contenido de la seccion -->
-          <h2>Menu</h2>
+          <h2 class="menu-titulo">Nuestro menú</h2>
+          <div class="menu-linea"></div>
+          <p class="menu-bajada">
+            Café de especialidad y bocados para cada momento del día en la
+            facultad.
+          </p>
+
+          <!-- FILTROS -->
+          <div class="menu-filtros">
+            <button class="menu-filtro activo">TODO</button>
+            <button class="menu-filtro activo">CAFÉS</button>
+            <button class="menu-filtro activo">FRIOS</button>
+
+            <button class="menu-filtro activo">DULCE</button>
+
+            <button class="menu-filtro activo">SALADO</button>
+          </div>
+
+          <!-- GRILLA -->
+          <div class="menu-grilla">
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Taza de tinto colombiano"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Café</span>
+                <h3>Tinto colombiano</h3>
+                <p>Filtrado suave, como se toma en Bogotá.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$2.800</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Flat white con arte latte"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Café</span>
+                <h3>Flat white Huila</h3>
+                <p>Doble espresso con leche texturizada.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$4.200</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Vaso de cold brew con hielo"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Frío</span>
+                <h3>Cold brew del parcial</h3>
+                <p>Extracción en frío de 18 horas.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$4.800</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Pandebonos recién horneados"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Dulce</span>
+                <h3>Pandebono</h3>
+                <p>Pancito de queso típico colombiano.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$2.500</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Arepa rellena de queso y jamón"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Salado</span>
+                <h3>Arepa rellena</h3>
+                <p>Queso, jamón y hogao casero.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$5.900</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <img
+                class="menu-card-img"
+                src="/public/img/Menu/Cafe1.jpg"
+                alt="Medialunas de manteca"
+              />
+              <div class="menu-card-texto">
+                <span class="menu-categoria">Dulce</span>
+                <h3>Medialunas UADE</h3>
+                <p>Docena de manteca para compartir.</p>
+                <div class="menu-card-pie">
+                  <span class="menu-precio">$6.500</span>
+                  <a href="#Menu" class="menu-detalle">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
