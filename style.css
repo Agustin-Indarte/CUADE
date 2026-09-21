@@ -6,9 +6,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+ 
+   font-style: normal;
   --fuente-global: "Oswald", sans-serif;
-  font-style: normal;
+ 
+  /* Colores */
+  --azul-uade: #1c2a5e;
+  --azul-uade-oscuro: #121c40;
+  --dorado-uade: #d4a940;
+ 
+  /* Paleta café colombiano */
+  --cafe-espresso: #2b1810;
+  --cafe-tostado: #4a2c1d;
+  --cafe-leche: #e6d3b8;
+  --cafe-crema: #f5ede1;
+  --rojo-colombia: #c8102e; /* acento puntual */
+ 
+  --texto: #2b1810;
+  --texto-claro: #f5ede1;
 }
 
 /* Generales */

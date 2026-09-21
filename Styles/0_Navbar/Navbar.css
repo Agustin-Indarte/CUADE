@@ -1,12 +1,27 @@
-.Navbar-Container{
-   display: flex;
-   flex-direction: row;
-   justify-content:space-between;
-   padding-inline: 1rem;
+.Navbar{
+    background-color: var(--azul-uade);
+    height: 72px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-inline: 1rem;
 }
+
 .Navbar-Container-items{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   min-width: 50vw;
+   min-width: 40vw;
+}
+
+.Nav-item{
+    color: var(--texto-claro);
+    font-size: 1.2rem;
+}
+
+.Nav-item:hover{
+    color: var(--dorado-uade);
+}
+.Logo-img{
+    height: 4.5rem;
 }
