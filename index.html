@@ -7,12 +7,6 @@
     <!-- Importacion de estilos -->
     <link rel="stylesheet" href="./Styles/0_Navbar/Navbar.css" />
     <link rel="stylesheet" href="./Styles/1_Hero/Hero.css" />
-    <link rel="stylesheet" href="./Styles/2_Menu/Menu.css" />
-    <link rel="stylesheet" href="./Styles/3_Banner/Banner.css" />
-    <link rel="stylesheet" href="./Styles/4_Galery/Galery.css" />
-    <link rel="stylesheet" href="./Styles/5_aboutMe/AboutMe.css" />
-    <link rel="stylesheet" href="./Styles/6_Contact/Contact.css" />
-    <link rel="stylesheet" href="./Styles/7_Footer/Footer.css" />
     <link rel="stylesheet" href="./style.css" />
 
     <title>Cuade - Cafe</title>
@@ -21,17 +15,19 @@
   <body>
     <!-- CABECERA CON NAVBAR - Agus -->
     <header class="Navbar">
-              <a href="#inicio" class="logo"><img class="Logo-img" src="/public/img/Logo.png" alt="Logo"></a>
-
       <div class="Navbar-Container">
-        <navbar class="Navbar">
+        <a href="#inicio" class="logo"
+          ><img class="Logo-img" src="/public/img/Logo.png" alt="Logo"
+        /></a>
+
+        <nav class="Navbar-menu">
           <ul class="Navbar-Container-items">
             <li class="Nav-item"><a href="#Menu">Menu</a></li>
             <li class="Nav-item"><a href="#Galeria">Galeria</a></li>
             <li class="Nav-item"><a href="Nosotros">Nosotros</a></li>
             <li class="Nav-item"><a href="Contacto">Contacto</a></li>
           </ul>
-        </navbar>
+        </nav>
       </div>
     </header>
 
@@ -39,9 +35,58 @@
     <main>
       <!-- 1ra seccion - Hero (Presentacion) - Agus -->
       <section id="Inicio" class="section section-hero">
-        <div class="contenedor">
-          <!-- contenido de la seccion -->
-          <h1>CUADE-CAFE</h1>
+        <div class="hero-contenedor">
+
+          <div class="Hero-ColumIzq">
+            <article class="hero-text">
+              <small>Entre clase y clase</small>
+              <h1>CUADE | CAFETERÍA</h1>
+              <p>
+                Para preparar un parcial, disfrutar el receso o compartir una
+                charla después de cursar: siempre hay un buen motivo para pasar por CUADE.
+              </p>
+
+              <div class="hero-btn">
+                <button class="btn btn-primary">VER MENU</button>
+                <button class="btn btn-secondary">COMO LLEGAR</button>
+              </div>
+            </article>
+
+            <article class="hero-metricas">
+              <div class="container-metrica">
+                <h2>
+                  100%
+                </h2>
+                <p>Café Colombiano</p>
+              </div>
+              <div class="container-metrica">
+                <h2>
+                  100%
+                </h2>
+                <p>Café Colombiano</p>
+              </div>
+              <div class="container-metrica">
+                <h2>
+                  100%
+                </h2>
+                <p>Café Colombiano</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="Hero-ColumDer">
+            <img
+              class="Hero-img Hero-img-principal"
+              src="/public/img/Hero1.png"
+              alt="Interior de la cafetería CUADE"
+            />
+            <img
+              class="Hero-img Hero-img-secundaria"
+              src="/public/img/Hero2.png"
+              alt="Granos de cafe"
+            />
+          </div>
+
         </div>
       </section>
 

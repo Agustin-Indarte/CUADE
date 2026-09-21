@@ -1,0 +1,130 @@
+.section-hero{
+    background-color: var(--azul-uade);
+}
+
+.hero-contenedor{
+display: flex;
+height: 100%;
+}
+
+/* Columna Izquierda */
+.Hero-ColumIzq{
+width: 50vw;
+display: flex;
+flex-direction: column;
+}
+
+.hero-text{
+    color: var(--texto-claro);
+}
+
+.hero-text small{
+    color: var(--cafe-leche);
+    font-size: 2rem;
+}
+
+
+
+.hero-text h1{
+    color: var(--dorado-uade);
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+.hero-text p{
+    font-size: 2rem;
+    width: 95%; 
+    margin-bottom: 1.5rem;
+}
+
+
+.hero-btn{
+    margin-bottom: 1rem;
+}
+
+.btn{
+    border: 2px solid;
+    border-color: transparent;
+    padding: 1rem;
+    border-radius:5px;
+    font-weight: bold;
+    margin-right: 1rem;
+    width: 275px;
+}
+
+.btn-primary{
+    background-color: Var(--cafe-leche);
+    color: var(--cafe-tostado);
+}
+
+.btn-primary:hover{
+    background-color: Var(--cafe-tostado);
+    color: var(--cafe-leche);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--cafe-leche);
+    border-color: var(--cafe-leche);
+}
+
+.btn-secondary:hover{
+    background-color: Var(--cafe-tostado);
+    color: var(--cafe-leche);
+    border-color: var(Var(--cafe-tostado));
+}
+
+.Hero-ColumDer{
+width: 50vw;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero-metricas{
+display: flex;
+margin-top: 1.5rem;
+}
+
+.container-metrica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.container-metrica h2{
+   color: var(--rojo-colombia);
+   font-size: 3rem;
+}
+
+.container-metrica p{
+   color: var(--cafe-leche);
+   font-size: 1.5rem;
+}
+
+
+/* Columna Derecha */
+.Hero-img{
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Hero-img-principal{
+    width: 78%;
+    height: 70%;
+    transform: translate(-5%, -5%);
+}
+
+.Hero-img-secundaria{
+    position: absolute;
+    width: 42%;
+    height: 38%;
+    right: 2%;
+    bottom: 8%;
+    border: 2px solid var(--texto-claro);
+    object-position: right center;
+}
+
