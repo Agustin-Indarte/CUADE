@@ -1,0 +1,119 @@
+/* seccion nosotros */
+
+.section-aboutme {
+  height: auto;
+  padding: 5rem 2rem;
+  background-color: var(--cafe-leche);
+  color: var(--cafe-tostado);
+}
+
+.aboutme-contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* ----- Columna de imágenes ----- */
+.aboutme-galeria {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  height: 480px;
+}
+
+.aboutme-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: var(--azul-uade);
+}
+
+.aboutme-img-principal {
+  grid-row: 1 / 3;
+}
+
+/* ----- Columna de texto ----- */
+.aboutme-texto {
+  width: 55%;
+}
+
+.aboutme-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--rojo-colombia);
+}
+
+.aboutme-titulo {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.aboutme-texto p {
+  margin-bottom: 1rem;
+}
+
+.aboutme-features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.aboutme-feature {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(74, 44, 29, 0.1);
+}
+
+.aboutme-feature-icono {
+  margin-bottom: 0.75rem;
+}
+
+.aboutme-feature-icono img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.aboutme-feature h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.aboutme-feature p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/* ----- Celular / Tablet ----- */
+@media (max-width: 900px) {
+  .aboutme-contenedor {
+    flex-direction: column;
+  }
+
+  .aboutme-galeria,
+  .aboutme-texto {
+    width: 100%;
+  }
+
+  .aboutme-galeria {
+    height: 340px;
+  }
+
+  .aboutme-features {
+    flex-direction: column;
+  }
+}
