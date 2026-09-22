@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./Styles/6_Contact/Contact.css" />
     <link rel="stylesheet" href="./Styles/7_Footer/Footer.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Styles/2_Menu/Menu.css" />
+    <link rel="stylesheet" href="./Styles/3_Banner/Banner.css" />
+    <link rel="stylesheet" href="./Styles/4_Galery/Galery.css" />
+    <link rel="stylesheet" href="./Styles/5_aboutMe/AboutMe.css" />
+    <link rel="stylesheet" href="./Styles/6_Contact/Contact.css" />
+    <link rel="stylesheet" href="./Styles/7_Footer/Footer.css" />
 
     <title>Cuade - Cafe</title>
   </head>
@@ -218,27 +224,120 @@
         </div>
       </section>
 
-      <!-- 3ra seccion - Banner (Call to Action) - Facundo -->
-      <section class="section section-banner">
-        <div class="contenedor">
-          <!-- contenido de la seccion -->
-          <h2>Banner</h2>
+<!-- 3ra seccion - Banner (Call to Action) - David -->
+ <section class="section section-banner">
+        <div class="banner-contenedor">
+          <div class="banner-info">
+            <div class="banner-icono">
+              <img
+                src="/public/img/cup2_icon.png"
+                alt="Ícono de taza de café"
+              />
+            </div>
+ 
+            <div class="banner-texto">
+              <small>Promo estudiantes y docentes</small>
+              <h2>15% off únicamente mostrando la app UADE</h2>
+              <p>
+                Válido en toda la carta. En semana de parciales tiramos la casa por la ventana: el segundo café va por nuestra cuenta. Anímate!
+              </p>
+            </div>
+          </div>
+ 
+          <div class="banner-btn">
+            <button class="btn btn-primary">Ver el menú</button>
+            <button class="btn btn-secondary">Cómo llegar</button>
+          </div>
         </div>
       </section>
 
-      <!-- 4ta seccion - Galery (Destacados) - Quien quiera-->
+      <!-- 4ta seccion - Gallery (Destacados) - Quien quiera-->
       <section id="Galeria" class="section section-galery">
         <div class="contenedor">
           <!-- contenido de la seccion -->
-          <h2>Galery</h2>
+          <h2>Gallery</h2>
         </div>
       </section>
 
       <!-- 5ta seccion - AboutMe (Nosotros) - David -->
-      <section id="Nosotros" class="section section-aboutme">
-        <div class="contenedor">
-          <!-- contenido de la seccion -->
-          <h2>AboutMe</h2>
+<section id="Nosotros" class="section section-aboutme">
+        <div class="aboutme-contenedor">
+          <div class="aboutme-galeria">
+            <img
+              class="aboutme-img aboutme-img-principal"
+              src="/public/img/edificio_uade.jpg"
+              alt="Edificio central UADE"
+            />
+            <img
+              class="aboutme-img"
+              src="/public/img/campusuade.jpg"
+              alt="Alumnos en el patio"
+            />
+            <img
+              class="aboutme-img"
+              src="/public/img/finca.jpg"
+              alt="Finca cafetera en Colombia"
+            />
+          </div>
+ 
+          <div class="aboutme-texto">
+            <small class="aboutme-label">Nuestra historia</small>
+            <h2 class="aboutme-titulo">De la finca al campus</h2>
+ 
+            <p>
+              CUADE nació en 2024 cuando un grupo de alumnos de intercambio
+              colombianos extrañaba el tinto de su casa. Empezaron con una
+              cafetera en el patio y hoy tienen barra propia dentro de la
+              facultad.
+            </p>
+            <p>
+              Compramos directo a productores del municipio de Planadas en el 
+              departamento del Tolima y además tostamos cada semana. 
+              El azul y el dorado de la facu son también los colores
+              de la bandera colombiana, y de ahí sale nuestra identidad.
+            </p>
+            <p>
+              Vení a conocernos y probá un café de especialidad, con el sabor
+              de la tierra cafetera colombiana.
+            </p>
+            <p>
+              <strong>Horario:</strong> Lunes a viernes de 8 a 21 hs.
+            </p>
+ 
+            <div class="aboutme-features">
+              <div class="aboutme-feature">
+                <div class="aboutme-feature-icono">
+                  <img
+                    src="/public/img/coffee-beans.png"
+                    alt="Ícono de grano de café"
+                  />
+                </div>
+                <h4>Origen directo</h4>
+                <p>Productores de Planadas, Tolima.</p>
+              </div>
+
+              <div class="aboutme-feature">
+                <div class="aboutme-feature-icono">
+                  <img
+                    src="/public/img/edificio.png"
+                    alt="Ícono de edificio"
+                  />
+                </div>
+                <h4>En la facu</h4>
+                <p>Patio central, planta baja (junto a Chile 2).</p>
+              </div>
+              <div class="aboutme-feature">
+                <div class="aboutme-feature-icono">
+                  <img
+                    src="/public/img/credencial.png"
+                    alt="Ícono de credencial"
+                  />
+                </div>
+                <h4>Precio alumno</h4>
+                <p>Descuento con credencial.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -251,9 +350,35 @@
       </section>
     </main>
 
-    <!-- 6ta seccion - Footer (Pie) - Facundo -->
+<!-- 7ma seccion - Footer (Pie) - David -->
     <footer class="footer">
-      <h2>Footer</h2>
+      <div class="footer-contenedor">
+        <div class="footer-logo">
+          <strong>CUADE</strong>
+          <span>Café más especial</span>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <img
+              src="/public/img/instagram_white.png"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" aria-label="TikTok">
+            <img src="/public/img/tiktok_white2.png" alt="TikTok" />
+          </a>
+          <a href="#" aria-label="Spotify">
+            <img
+              src="/public/img/spotify_white.png"
+              alt="Spotify"
+            />
+          </a>
+        </div>
+        <a href="#Inicio" class="footer-volver">Volver arriba ↑</a>
+      </div>
+      <p class="footer-copy">
+        © 2026 CUADE — TP Integrador Diseño y Desarrollo Web, UADE · David Espinosa, Agustín Indarte, Facundo Balmaceda.
+      </p>
     </footer>
   </body>
 </html>

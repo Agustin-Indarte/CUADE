@@ -1,0 +1,114 @@
+/* banner */
+
+.section-banner {
+  height: auto;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--dorado-uade);
+  color: var(--cafe-tostado);
+}
+
+.banner-contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.banner-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.banner-icono {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cafe-tostado);
+}
+
+.banner-icono img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.banner-texto small {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.banner-texto h2 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.banner-texto p {
+  font-size: 1rem;
+  max-width: 480px;
+}
+
+/* Botones propios de esta sección (fondo claro, necesitan más contraste que el .btn base) */
+.banner-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.banner-btn .btn {
+  width: 220px;
+  margin-right: 0;
+}
+
+.banner-btn .btn-primary {
+  color: var(--texto-claro);
+  background-color: var(--cafe-tostado);
+}
+
+.banner-btn .btn-primary:hover {
+  color: var(--cafe-tostado);
+  background-color: var(--texto-claro);
+}
+
+.banner-btn .btn-secondary {
+  color: var(--cafe-tostado);
+  border-color: var(--cafe-tostado);
+}
+
+.banner-btn .btn-secondary:hover {
+  color: var(--texto-claro);
+  background-color: var(--cafe-tostado);
+  border-color: var(--cafe-tostado);
+}
+
+/* ----- Celular ----- */
+@media (max-width: 768px) {
+  .banner-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-info {
+    flex-direction: column;
+  }
+
+  .banner-btn .btn {
+    width: 100%;
+  }
+}
